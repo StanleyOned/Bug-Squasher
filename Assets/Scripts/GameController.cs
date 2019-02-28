@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -23,7 +24,8 @@ public class GameController : MonoBehaviour
         numberOfLives = 3;
         setScoreText();
         setLivesText();
-        StartCoroutine(SpawnEnemies());
+        myGame = SpawnEnemies();
+        StartCoroutine(myGame);
     }
 
 
@@ -108,7 +110,8 @@ public class GameController : MonoBehaviour
         {
             numberOfLives = 0;
             setLivesText();
-            StopCoroutine(SpawnEnemies());
+            StopCoroutine(myGame);
+            SceneManager.LoadScene("StartMenu");
         }
     }
 }

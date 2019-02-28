@@ -97,6 +97,7 @@
     <Compile Include="Assets\ObjectSpawner.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\ObjectMovement.cs" />
+    <Compile Include="Assets\Scripts\StartMenu.cs" />
     <None Include="Assets\yam\FlyBugs\read me.txt" />
     <None Include="Assets\LeanTween\Examples\Archived\2dUnlitWithFade.shader" />
     <None Include="Assets\LeanTween\ReadMe.txt" />
