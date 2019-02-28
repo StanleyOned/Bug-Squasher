@@ -112,93 +112,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &436847050
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5273944959277103836, guid: 4e39dfe885ac7482b974a2ab08a61883,
-        type: 3}
-      propertyPath: m_Name
-      value: enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 668865177547322237, guid: 4e39dfe885ac7482b974a2ab08a61883,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 10.383095
-      objectReference: {fileID: 0}
-    - target: {fileID: 668865177547322237, guid: 4e39dfe885ac7482b974a2ab08a61883,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.2406247
-      objectReference: {fileID: 0}
-    - target: {fileID: 668865177547322237, guid: 4e39dfe885ac7482b974a2ab08a61883,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 668865177547322237, guid: 4e39dfe885ac7482b974a2ab08a61883,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 668865177547322237, guid: 4e39dfe885ac7482b974a2ab08a61883,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 668865177547322237, guid: 4e39dfe885ac7482b974a2ab08a61883,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 668865177547322237, guid: 4e39dfe885ac7482b974a2ab08a61883,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 668865177547322237, guid: 4e39dfe885ac7482b974a2ab08a61883,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 668865177547322237, guid: 4e39dfe885ac7482b974a2ab08a61883,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 668865177547322237, guid: 4e39dfe885ac7482b974a2ab08a61883,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 668865177547322237, guid: 4e39dfe885ac7482b974a2ab08a61883,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4e39dfe885ac7482b974a2ab08a61883, type: 3}
---- !u!1 &436847051 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5273944959277103836, guid: 4e39dfe885ac7482b974a2ab08a61883,
-    type: 3}
-  m_PrefabInstance: {fileID: 436847050}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &436847052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 436847051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c794213f60498486dabd56245b384a71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,7 +164,7 @@ Camera:
   far clip plane: 1000
   field of view: 65
   orthographic: 1
-  orthographic size: 6.4
+  orthographic size: 5.62
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -310,8 +223,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3260c411479640f2ab431e70aae01ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnValues: {x: 14, y: 7, z: -1}
-  enemy: {fileID: 5273944959277103836, guid: 4e39dfe885ac7482b974a2ab08a61883, type: 3}
+  spawnValues: {x: 14, y: 5, z: -1}
+  enemy: {fileID: 144206, guid: f4faa66c15c3d0d42a083745b8e57ab9, type: 3}
+  bugs:
+  - {fileID: 172658, guid: a65fdff360db1464b86c74401a3f8478, type: 3}
+  - {fileID: 191856, guid: 506f941f77170844593d3e4c857d9aa8, type: 3}
+  - {fileID: 140632, guid: bf2ef55307e948a42a07fb3c186f818e, type: 3}
+  - {fileID: 179092, guid: b18015a142b2efa46841de8486ec04ac, type: 3}
+  - {fileID: 140818, guid: fcd2b37ecf4fc714e9c68e6b167cf5ce, type: 3}
+  - {fileID: 144206, guid: f4faa66c15c3d0d42a083745b8e57ab9, type: 3}
+  - {fileID: 194700, guid: 00fb74035137c50478bdaf2285788bc6, type: 3}
+  - {fileID: 193940, guid: d98a0606c75cda645b44150f1d09fc86, type: 3}
+  - {fileID: 108446, guid: 6a371c3c5c48db74aaaebac668d22719, type: 3}
   enemiesCount: 10
 --- !u!4 &1403283897
 Transform:
