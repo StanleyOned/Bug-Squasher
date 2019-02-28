@@ -24,6 +24,7 @@ public class DestroObject : MonoBehaviour
 
     private void OnMouseDown()
     {
+        GetComponent<AudioSource>().Play();
         Destroy(gameObject);
     }
 }

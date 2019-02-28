@@ -44,7 +44,7 @@ public class GameController : MonoBehaviour
 
                 Vector3 midPos1 = Vector3.Slerp(startPos, endPos, (dist * 0.1f) / dist);
                 Vector3 midPos2 = Vector3.Slerp(startPos, endPos, (dist * 0.9f) / dist);
-                
+
 
                 midPos1 += Vector3.up * 2;
                 midPos2 += Vector3.up * 2;
