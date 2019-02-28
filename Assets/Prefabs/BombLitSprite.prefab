@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 2541520279027424404}
   - component: {fileID: 2841647231242885459}
   - component: {fileID: 7143966686112256768}
+  - component: {fileID: 7586944367072858089}
   m_Layer: 0
   m_Name: BombLitSprite
-  m_TagString: enemy
+  m_TagString: bomb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -203,3 +204,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.28, y: 1.28}
   m_EdgeRadius: 0
+--- !u!114 &7586944367072858089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675863562000582910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c794213f60498486dabd56245b384a71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

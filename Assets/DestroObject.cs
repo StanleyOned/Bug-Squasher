@@ -25,6 +25,16 @@ public class DestroObject : MonoBehaviour
     private void OnMouseDown()
     {
         GetComponent<AudioSource>().Play();
+        GameObject gameController = GameObject.Find("GameController");
+        if (gameObject.tag == "bomb")
+        {
+            gameController.GetComponent<GameController>().loseLife();
+        }
+        else
+        {
+            gameController.GetComponent<GameController>().addScore();
+
+        }
         Destroy(gameObject);
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -8,8 +9,20 @@ public class GameController : MonoBehaviour
     public GameObject[] bugs;
     public int enemiesCount;
 
+    public int score;
+    public Text scoreText;
+
+    public int numberOfLives;
+    public Text livesText;
+
+    private IEnumerator myGame;
+
     void Start()
     {
+        score = 0;
+        numberOfLives = 3;
+        setScoreText();
+        setLivesText();
         StartCoroutine(SpawnEnemies());
     }
 
@@ -67,4 +80,35 @@ public class GameController : MonoBehaviour
         }
     }
 
+    private void setScoreText()
+    {
+        scoreText.text = "Score: " + score.ToString();
+    }
+
+    private void setLivesText()
+    {
+        livesText.text = "Lives: " + numberOfLives.ToString();
+    }
+
+    public void addScore()
+    {
+        score += 1;
+        setScoreText();
+
+    }
+
+    public void loseLife()
+    {
+        if (numberOfLives > 1)
+        {
+            numberOfLives -= 1;
+            setLivesText();
+        }
+        else
+        {
+            numberOfLives = 0;
+            setLivesText();
+            StopCoroutine(SpawnEnemies());
+        }
+    }
 }

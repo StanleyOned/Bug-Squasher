@@ -644,6 +644,7 @@ GameObject:
   - component: {fileID: 9536294}
   - component: {fileID: 6722264619156006195}
   - component: {fileID: 8717384374812536665}
+  - component: {fileID: 7999868060581784613}
   m_Layer: 0
   m_Name: bugs_firefly
   m_TagString: enemy
@@ -814,3 +815,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7999868060581784613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c794213f60498486dabd56245b384a71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

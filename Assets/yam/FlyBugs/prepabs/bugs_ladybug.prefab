@@ -328,6 +328,7 @@ GameObject:
   - component: {fileID: 9564246}
   - component: {fileID: 1038532087960597444}
   - component: {fileID: 1942337165934800935}
+  - component: {fileID: 1886244596086644361}
   m_Layer: 0
   m_Name: bugs_ladybug
   m_TagString: enemy
@@ -497,6 +498,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1886244596086644361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c794213f60498486dabd56245b384a71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &160466
 GameObject:
   m_ObjectHideFlags: 0
