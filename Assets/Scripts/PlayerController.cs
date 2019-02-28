@@ -14,11 +14,14 @@ public class PlayerController : MonoBehaviour
     public Button bugButton;
     public Button nonBugButton;
 
+    public Text gameOverText;
+
     void Start()
     {
         //score.GetComponent<Text>().text = "Score: " + 20;
         score = 0;
         numberOfLives = 3;
+        gameOverText.enabled = false;
         setScoreText();
         setLivesText();
     }
@@ -37,12 +40,14 @@ public class PlayerController : MonoBehaviour
 
     public void loseLife()
     {
-        if (numberOfLives > 0) {
+        if (numberOfLives > 1) {
             numberOfLives -= 1;
             setLivesText();
         }
         else
         {
+            numberOfLives = 0;
+            setLivesText();
             resetGame();
         }
     }
@@ -59,8 +64,13 @@ public class PlayerController : MonoBehaviour
 
     private void resetGame()
     {
-        //end game
-        //show score
-        //show menu
+        gameOverText.enabled = true;
+        StartCoroutine(waitThreeSeconds());
+    }
+
+    IEnumerator waitThreeSeconds()
+    {
+        yield return new WaitForSeconds((float)3.0);
+        Start();
     }
 }
